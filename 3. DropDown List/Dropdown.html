@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                font-family: monospace;
+            }
+            ul{
+                list-style: none;
+                background: purple;
+            }
+            ul li{
+                display: inline-block;
+                position: relative;
+            }
+            ul li a {
+                display: block;
+                padding: 20px 30px;
+                color: aqua;
+            }
+            ul li ul.dropdown {
+                width: 100%;
+                background: blue;
+                position: absolute;
+                z-index: 100;
+                display: none;
+            }
+            ul li a:hover {
+                background: green;
+            }
+            ul li:hover ul.dropdown {
+                display: block;
+
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Languges</a>
+            <ul class="dropdown">
+                <li><a href="#">English</a></li>
+                <li><a href="#">Hindi</a></li>
+                <li><a href="#">Telgu</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Task</a>
+                <ul class="dropdown">
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Tools</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Profile</a>
+                <ul class="dropdown">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Signup</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>
